@@ -5,6 +5,8 @@
 	</head>
 	<body>
 		<script language="javascript" type="text/javascript">
+			
+			//varriable declaration & print output
 			var a=40, b=10;
 			var int=30;
 			var float=15.0102030405;
@@ -18,6 +20,7 @@
 			document.writeln("Mohon Basu");
 			document.write(boolean,"<br/>",);
 			
+			//for loop
 			var i;
 			var sum = 0;
 			for(i = 1; i <= 10; i++)
@@ -31,6 +34,16 @@
 			}
 			document.write("<hr/>");
 			document.write("Total = " + sum);
+			
+			//while loop
+			var num = parseInt(prompt("Enter all digits", "Enter here..."));
+			var count = 0;
+			while(num > 0)
+			{
+				num = Math.trunc(num / 10);
+				count++;
+			}
+			document.write("Total Digits = " + count);
 		</script>
 	</body>
 </html>
